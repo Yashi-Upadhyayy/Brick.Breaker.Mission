@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Alegreya&display=swap');
+
+body{
+    background: url("img/body-background.jpg");
+    font-family: 'Hina Mincho', serif;
+}
+.heading{
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 2rem;
+    text-align: center;
+    color: lightpink;  
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+#breakout
+{
+    display: block;
+    margin:auto;
+}
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #fff;
+    animation: loader 4s infinite ease-in;
+}
+.loader-inner{
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 4s infinite ease-in;
+}
+@keyframes loader{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader-inner{
+    0% {
+        height: 0%;
+    }
+    25% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    75% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+*{
+    font-family: "Germania One";
+}
+#sound{
+    width: 30px;
+    height : 30px;
+    cursor: pointer;
+    position: absolute;
+    top : 465px;
+    left : 15px;
+}
+#gameover{
+    position: absolute;
+    width : 400px;
+    height: 500px;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+#youwon{
+    width: 100px;
+    position: absolute;
+    top : 200px;
+    left : 150px;
+    display: none;
+}
+#youlose{
+    width:400px;
+    position: absolute;
+    top: 100px;
+    left : 0px;
+    display: none;
+}
+#restart{
+    position: absolute;
+    top: 310px;
+    left : 155px;
+    cursor: pointer;
+    font-size: 1.25em;
+    color : #FFF;
+}

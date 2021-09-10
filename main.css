@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Alegreya&display=swap');
+
+body {
+    background-image: url("img/body-background.jpg");
+    margin: 0;
+}
+.heading {
+    font-family: 'Inknut Antiqua', serif;
+    text-align: center;
+    font-size: 2.1rem;
+    color: white;
+    margin-block-end: 0;
+}
+.heading img{
+    height: 1.9rem;
+    width: 1.9rem;
+}
+.heading span{
+    color: gold;
+}
+
+.sub-heading{
+    font-family: 'Alegreya', serif;
+    font-size: 1.7rem;
+    margin-left: 25%;
+    color:lightpink;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.para{
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: larger;
+}
+.btn{
+    display: block;
+    margin: auto;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color:navy;
+    background-color: gold;
+    padding: 0rem 0.9rem;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+}
